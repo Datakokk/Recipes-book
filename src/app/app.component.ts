@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   title = 'Recipes-book';
+  loadedFeature = 'recipe';
 
-  @Input() mostrarR: boolean;
-  @Input() mostrarL: boolean;
-
-  onShowR(recibido: boolean){
-    this.mostrarR = recibido;
-  }
-
-  onShowL(recibido: boolean){
-    this.mostrarL = recibido;
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
   }
 }
