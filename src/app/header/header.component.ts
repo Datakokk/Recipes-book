@@ -1,4 +1,3 @@
-import { from } from 'rxjs';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
@@ -7,13 +6,13 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
     styleUrls: ['./header.component.css']
 })
 export class HeaderComponent{
-@Output() featureSelected = new EventEmitter<string>();
+/*@Output() featureSelected = new EventEmitter<string>();*/
 
     collapsed = true;
     
-    constructor(){}
+/*    constructor(){}
 
     onSelect(feature: string){
         this.featureSelected.emit(feature);
-    }
+    }*/
 } 
